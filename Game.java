@@ -15,20 +15,14 @@ public class Game {
 		
 		if(PLAYER_COUNT == 2)
 			HAND_SIZE = 10;
-		else if(PLAYER_COUNT == 3)
-			HAND_SIZE = 9;
-		else if(PLAYER_COUNT == 4)
-			HAND_SIZE = 8;
-		else if(PLAYER_COUNT == 5)
-			HAND_SIZE = 7;
 		else
 			HAND_SIZE = -1;
 		
 		players = new ArrayList<Player>(PLAYER_COUNT);
-		// players.add(new Player(Player.HUMAN, Util.strMenu("\nChoose your name:"))); Will need the util class to complete this 
+		players.add(new Player(Player.HUMAN, Util.strMenu("\nChoose your name:")));// Will need the util class to complete this 
 		for(int i = 0; i < PLAYER_COUNT - 2; i++)
 			players.add(new Player(Player.PLAYERTWO, "Player " + (i+2)));
-		players.add(new Player(Player.PLAYERTWO, "AJ528"));
+		players.add(new Player(Player.PLAYERTWO, "Player 2"));
 			
 		System.out.println("\nStarting new game with " + PLAYER_COUNT + " players.\n");
 
@@ -57,9 +51,10 @@ public class Game {
 	/**
 	 * 
 	 * @param hand
+     * @return 
 	 */
 	public static int scoreHand(List<Card> hand) {
-		//core required to label the points made from the Card list in players hands
+		//code required to label the points made from the Card list in players hands
                 return 0;
 	}
 

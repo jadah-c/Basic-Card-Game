@@ -38,6 +38,7 @@ public class Player {
 	/**
 	 * 
 	 * @param round
+     * @return 
 	 */
 	public List<Card> getHand(int round) {
 		return deck.get(round);
@@ -65,6 +66,7 @@ public class Player {
 	/**
 	 * 
 	 * @param round
+     * @return 
 	 */
 	public Card popChopsticks(int round) {
 		for(int i = 0; i < deck.get(round).size(); i++)

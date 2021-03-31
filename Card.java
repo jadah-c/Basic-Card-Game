@@ -25,10 +25,10 @@ public class Card {
 		if(name.equals("dumplings"))
 			return "Dumplings (x1 = 1, x2 = 3, x3 = 6, x4 = 10, x5 = 15)";
 		if(name.equals("wasabi"))
-			return "Wasabi (x3 multiplier for next nigiri)";
+			return "Wasabi (x3 points for next nigiri)";
 		if(name.contains("maki")) {
 			int num = Integer.parseInt(name.substring(5));
-			return "Maki " + num + " (most maki earns 6, second earns 3)";
+			return "Maki " + num + " (most maki = 6, second = 3)";
 		}
 		if(name.equals("nigiri egg"))
 			return "Egg Nigiri (1)";
@@ -37,9 +37,9 @@ public class Card {
 		if(name.equals("nigiri squid"))
 			return "Squid Nigiri (3)";
 		if(name.equals("chopsticks"))
-			return "Chopsticks (can swap for two cards)";
+			return "Chopsticks (swap for two cards in one turn)";
 		if(name.equals("pudding"))
-			return "Pudding (no points until end of game)";
+			return "Pudding (no points until game ends)";
 		
 		return name;
 	}
